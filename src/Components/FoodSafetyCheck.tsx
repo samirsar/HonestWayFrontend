@@ -1,4 +1,4 @@
-import { Card, Row, Col } from "antd";
+import { Card, Row, Col, Steps } from "antd";
 import Title from "antd/es/typography/Title";
 
 const foodSafetyChecks = [
@@ -34,27 +34,103 @@ const FoodSafetyCheck = () => {
 
       {/* Cards Section */}
       <Row gutter={[16, 16]} justify="center">
-        {foodSafetyChecks.map((check, index) => (
-          <Col xs={24} sm={12} md={12} lg={12} key={index}>
-            <Card hoverable style={{ textAlign: "left", borderRadius: "10px" }}>
-              <div style={{ display: "flex", alignItems: "center" }}>
+        <Col span={10}>
+        <Row>
+
+        <Card hoverable style={{ textAlign: "left", borderRadius: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center",width:'30rem' }}>
                 {/* Icon */}
                 <img
-                  src={check.icon}
-                  alt={check.title}
+                  src={foodSafetyChecks[0].icon}
+                  alt={foodSafetyChecks[0].title}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
                 {/* Text Content */}
                 <div>
                   <Title level={4} style={{ margin: 0, color: "#1677ff" }}>
-                    {check.title}
+                    {foodSafetyChecks[0].title}
                   </Title>
-                  <p style={{ color: "#555" }}>{check.description}</p>
+                  <p style={{ color: "#555" }}>{foodSafetyChecks[0].description}</p>
                 </div>
               </div>
             </Card>
-          </Col>
-        ))}
+        </Row>
+        <Row style={{height:'10rem'}}>
+
+        </Row>
+        <Row>
+
+        <Card hoverable style={{ textAlign: "left", borderRadius: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center" ,width:'30rem'}}>
+                {/* Icon */}
+                <img
+                  src={foodSafetyChecks[2].icon}
+                  alt={foodSafetyChecks[2].title}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
+                {/* Text Content */}
+                <div>
+                  <Title level={4} style={{ margin: 0, color: "#1677ff" }}>
+                    {foodSafetyChecks[2].title}
+                  </Title>
+                  <p style={{ color: "#555" }}>{foodSafetyChecks[2].description}</p>
+                </div>
+              </div>
+            </Card>
+        </Row>
+        </Col>
+        <Col span={2}>
+        <Steps direction="vertical" current={-1} // No highlighted step
+          items={foodSafetyChecks.map(() => ({
+            description:<div style={{height:'10rem'}}></div>
+          }))}
+        />
+
+        </Col>
+        <Col span={10}>
+        <Row style={{height:'10rem'}}></Row>
+        <Row>
+          
+        <Card hoverable style={{ textAlign: "left", borderRadius: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center",width:'30rem' }}>
+                {/* Icon */}
+                <img
+                  src={foodSafetyChecks[1].icon}
+                  alt={foodSafetyChecks[1].title}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
+                {/* Text Content */}
+                <div>
+                  <Title level={4} style={{ margin: 0, color: "#1677ff" }}>
+                    {foodSafetyChecks[1].title}
+                  </Title>
+                  <p style={{ color: "#555" }}>{foodSafetyChecks[1].description}</p>
+                </div>
+              </div>
+            </Card>
+        </Row>
+        <Row style={{height:'10rem'}}></Row>
+        <Row >
+          
+        <Card hoverable style={{ textAlign: "left", borderRadius: "10px" }}>
+              <div style={{ display: "flex", alignItems: "center" ,width:'30rem'}}>
+                {/* Icon */}
+                <img
+                  src={foodSafetyChecks[3].icon}
+                  alt={foodSafetyChecks[3].title}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
+                {/* Text Content */}
+                <div>
+                  <Title level={4} style={{ margin: 0, color: "#1677ff" }}>
+                    {foodSafetyChecks[3].title}
+                  </Title>
+                  <p style={{ color: "#555" }}>{foodSafetyChecks[3].description}</p>
+                </div>
+              </div>
+            </Card>
+        </Row>
+        </Col>
       </Row>
     </div>
   );
