@@ -38,25 +38,44 @@ const AppFooter = () => {
         </div>
 
         {/* Social Media Links */}
-        <div style={{ textAlign: "right" }}>
+        <div style={{ textAlign: "center" }}>
           <Text style={{ fontSize: "16px", fontWeight: "bold", color: "white" }}>
             Follow us
           </Text>
           <div style={{ marginTop: "8px" }}>
             <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
-              <i className="fab fa-facebook"></i>
+            <img
+                  src={'../../public/YouTube.png'}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
             </a>
+            
             <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
-              <i className="fab fa-instagram"></i>
+            <img
+                  src={'../../public/Instagram Circle.png'}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
             </a>
+            
             <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
-              <i className="fab fa-linkedin"></i>
+            <img
+                  src={'../../public/LinkedIn Circled.png'}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
             </a>
+            
+            <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
+            <img
+                  src={'../../public/Facebook.png'}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
+            </a>
+            
           </div>
         </div>
       </div>
 
-      {/* Bottom Text */}
+      <hr />
       <div style={{ marginTop: "20px" }}>
         <Text style={{ color: "white" }}>
           © 2025 Honest Way Healthy Living Pvt. Ltd. All Rights Reserved

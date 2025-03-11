@@ -27,34 +27,74 @@ const StandardsHigh = () => {
         How We Keep Standards High
       </Title>
 
-      {/* Continuous Monitoring Circle */}
-      <div style={{ textAlign: "center", marginBottom: "24px" }}>
-        <img src="../../public/standard_hight_image.png" alt="Continuous Monitoring" style={{ width: "80px" }} />
+      <Row>
+        <Col span={12}>
+        
+        <div style={{ textAlign: "center", margin: "28px 0" }}>
+        <img src="../../public/standard_hight_image.png" alt="Continuous Monitoring" style={{ width: "300px"}} />
         <Title level={4} style={{ color: "#1677ff" }}>Continuous Monitoring</Title>
       </div>
+        </Col>
+        <Col span={12}>
+        <Row style={{marginTop:'1rem'}}>
 
-      {/* Cards Section */}
-      <Row gutter={[16, 16]} justify="center">
-        {standards.map((item, index) => (
-          <Col xs={24} sm={12} md={8} key={index}>
-            <Card hoverable style={{ textAlign: "left", borderRadius: "10px", minHeight: "200px" }}>
+        <Card hoverable style={{ textAlign: "left", borderRadius: "10px", minHeight: "100px",width:'500px' }}>
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* Icon */}
                 <img
-                  src={item.icon}
-                  alt={item.title}
+                  src={standards[0].icon}
+                  alt={standards[0].title}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
                 {/* Text Content */}
                 <div>
-                  <Title level={4} style={{ margin: 0, color: "#1677ff" }}>{item.title}</Title>
-                  <p style={{ color: "#555" }}>{item.description}</p>
+                  <Title level={4} style={{ margin: 0, color: "#1677ff" }}>{standards[0].title}</Title>
+                  <p style={{ color: "#555" }}>{standards[0].description}</p>
                 </div>
               </div>
             </Card>
-          </Col>
-        ))}
+        </Row>
+        <Row style={{marginTop:'1rem'}}>
+
+        <Card hoverable style={{ textAlign: "left", borderRadius: "10px", minHeight: "100px",width:'500px' }}>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {/* Icon */}
+                <img
+                  src={standards[1].icon}
+                  alt={standards[1].title}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
+                {/* Text Content */}
+                <div>
+                  <Title level={4} style={{ margin: 0, color: "#1677ff" }}>{standards[1].title}</Title>
+                  <p style={{ color: "#555" }}>{standards[1].description}</p>
+                </div>
+              </div>
+            </Card>
+        </Row>
+        <Row style={{marginTop:'1rem'}}>
+
+        <Card hoverable style={{ textAlign: "left", borderRadius: "10px", minHeight: "100px",width:'500px' }}>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {/* Icon */}
+                <img
+                  src={standards[2].icon}
+                  alt={standards[2].title}
+                  style={{ width: "40px", height: "40px", marginRight: "12px" }}
+                />
+                {/* Text Content */}
+                <div>
+                  <Title level={4} style={{ margin: 0, color: "#1677ff" }}>{standards[2].title}</Title>
+                  <p style={{ color: "#555" }}>{standards[2].description}</p>
+                </div>
+              </div>
+            </Card>
+        </Row>
+        
+
+        </Col>
       </Row>
+
     </div>
   );
 };

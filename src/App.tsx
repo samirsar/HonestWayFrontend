@@ -33,6 +33,9 @@ const Home = () => (
     <div style={{ width: '100%', marginTop: '2rem' }}>
       <StandardsHigh />
     </div>
+    <div style={{ width: '100%', marginTop: '2rem' }}>
+      <ComingSoon />
+    </div>
   </Content>
 );
 
