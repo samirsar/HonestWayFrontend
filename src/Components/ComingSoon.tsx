@@ -17,7 +17,7 @@ const ComingSoon = () => {
       >
         <Col span={8} style={{ textAlign: "end" }}>
           <img
-            src="../../public/coming_soon_image.png" // Update with the actual image path
+            src="..//coming_soon_image.png" // Update with the actual image path
             alt="Coming Soon"
             style={{ width: "400px", marginBottom: "20px", height: "400px" }}
           />

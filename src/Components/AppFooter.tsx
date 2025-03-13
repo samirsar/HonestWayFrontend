@@ -45,28 +45,28 @@ const AppFooter = () => {
           <div style={{ marginTop: "8px" }}>
             <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'../../public/YouTube.png'}
+                  src={'..//YouTube.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>
             
             <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'../../public/Instagram Circle.png'}
+                  src={'..//Instagram Circle.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>
             
             <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'../../public/LinkedIn Circled.png'}
+                  src={'..//LinkedIn Circled.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>
             
             <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'../../public/Facebook.png'}
+                  src={'..//Facebook.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>

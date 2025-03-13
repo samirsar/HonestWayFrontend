@@ -5,17 +5,17 @@ const standards = [
   {
     title: "Product Sourcing",
     description: "We randomly select packaged food products from the open market to ensure unbiased and comprehensive testing.",
-    icon: "../../public/standard_high_image_1.png",
+    icon: "..//standard_high_image_1.png",
   },
   {
     title: "Laboratory Testing",
     description: "Each product undergoes our 4-stage verification process in a NABL accredited laboratory.",
-    icon: "../../public/standard_high_image_2.png",
+    icon: "..//standard_high_image_2.png",
   },
   {
     title: "Result Verification",
     description: "Our experts review and verify the lab results, compiling detailed reports for every product.",
-    icon: "../../public/standard_high_image_3.png",
+    icon: "..//standard_high_image_3.png",
   },
 ];
 
@@ -31,7 +31,7 @@ const StandardsHigh = () => {
         <Col span={12}>
         
         <div style={{ textAlign: "center", margin: "28px 0" }}>
-        <img src="../../public/standard_hight_image.png" alt="Continuous Monitoring" style={{ width: "300px"}} />
+        <img src="..//standard_hight_image.png" alt="Continuous Monitoring" style={{ width: "300px"}} />
         <Title level={4} style={{ color: "#1677ff" }}>Continuous Monitoring</Title>
       </div>
         </Col>

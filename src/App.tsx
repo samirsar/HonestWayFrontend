@@ -7,13 +7,14 @@ import FoodSafetyCheck from './Components/FoodSafetyCheck';
 import StandardsHigh from './Components/StandardHight';
 import ComingSoon from './Components/ComingSoon';
 import AppFooter from './Components/AppFooter';
+import { ContextApiComponent } from './Components/ContextApiComponet';
 const { Title, Text } = Typography;
 
 const { Header, Content, Footer } = Layout;
 
 const Home = () => (
   <Content style={{ textAlign: 'center', padding: '50px' }}>
-     <div style={{ width: '100%', background: 'rgba(0, 0, 0, 0.5)', padding: '40px', borderRadius: '10px', display: 'inline-block', backgroundImage: 'url(../public/honest_way_main_image.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+     <div style={{ width: '100%', background: 'rgba(0, 0, 0, 0.5)', padding: '40px', borderRadius: '10px', display: 'inline-block', backgroundImage: 'url(/honest_way_main_image.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <Title level={1} style={{ color: '#fff' }}>Your Trusted Partner in Healthy Food Choices</Title>
           <Text style={{ color: '#fff', fontSize: '18px' }}>
             Curating food products that pass our rigorous 4-stage lab test to empower you in making informed, healthy choices.
@@ -41,12 +42,14 @@ const Home = () => (
 
 const App = () => {
   return (
+    <ContextApiComponent>
+
     <Router>
       <Layout>
         {/* Navbar */}
         <Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#fff', padding: '0 20px' }}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="../public/honest_way_logo.png" alt="HonestWay Logo" style={{ height: '40px', marginRight: '10px' }} />
+            <img src="/honest_way_logo.png" alt="HonestWay Logo" style={{ height: '40px', marginRight: '10px' }} />
           </div>
           <Menu mode="horizontal" defaultSelectedKeys={['1']} style={{ flex: 1, justifyContent: 'center' }}>
             <Menu.Item key="1"><Link to="/">Home</Link></Menu.Item>
@@ -71,6 +74,7 @@ const App = () => {
         </Footer>
       </Layout>
     </Router>
+    </ContextApiComponent>
   );
 };
 
