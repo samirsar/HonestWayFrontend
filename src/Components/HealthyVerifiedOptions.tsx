@@ -9,25 +9,25 @@ const steps = [
     title: "Chaotic Market",
     description:
       "Frustrated with a market full of fake products and claims? Confused if the product is really safe and healthy?",
-    image: "..//step_1_image.png", // Replace with actual image path
+    image: "/step_1_image.png", // Replace with actual image path
   },
   {
     title: "Discover",
     description:
       "Look for the Honest Way logo on the packaging and find healthy & verified products in every category.",
-    image: "..//step_2_image.png", // Replace with actual image path
+    image: "/step_2_image.png", // Replace with actual image path
   },
   {
     title: "Scan",
     description:
       "Check expert rating & summary, decode ingredients, match your health preferences, and see the extensive lab report.",
-    image: "..//step_3_image.png", // Replace with actual image path
+    image: "/step_3_image.png", // Replace with actual image path
   },
   {
     title: "Decide",
     description:
       "Purchase healthy products that you trust. Be confident in your purchase knowing the product is 100% safe.",
-    image: "..//step_4_image.png", // Replace with actual image path
+    image: "/step_4_image.png", // Replace with actual image path
   },
 ];
 

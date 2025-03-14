@@ -7,22 +7,22 @@ const foodSafetyChecks = [
   {
     title: "Purity Check",
     description: "Ensures the product is free from any adulteration or dilution.",
-    icon: "..//food_safety_image_1.png",
+    icon: "/food_safety_image_1.png",
   },
   {
     title: "Nutritional Analysis",
     description: "Verifying levels of sugar, unhealthy fats, and ingredients like palm oil.",
-    icon: "..//food_safety_image_2.png",
+    icon: "/food_safety_image_2.png",
   },
   {
     title: "Safety Check",
     description: "Tests for heavy metals, pesticides, and banned chemicals.",
-    icon: "..//food_safety_image_3.png",
+    icon: "/food_safety_image_3.png",
   },
   {
     title: "Microbial Testing",
     description: "Checks for bacterial and fungal contamination.",
-    icon: "..//food_safety_image_4.png",
+    icon: "/food_safety_image_4.png",
   },
 ];
 

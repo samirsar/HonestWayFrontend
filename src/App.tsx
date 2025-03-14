@@ -1,6 +1,6 @@
 import { Button, Layout, Menu, Typography } from 'antd';
 import "antd/dist/reset.css";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { VerificationMatters } from './Components/VerificationMatters';
 import HealthyVerifiedOptions from './Components/HealthyVerifiedOptions';
 import FoodSafetyCheck from './Components/FoodSafetyCheck';
@@ -12,15 +12,16 @@ const { Title, Text } = Typography;
 
 const { Header, Content, Footer } = Layout;
 
-const Home = () => (
-  <Content style={{ textAlign: 'center', padding: '50px' }}>
+const Home = () => {
+  const navigate=useNavigate()
+  return <Content style={{ textAlign: 'center', padding: '50px' }}>
      <div style={{ width: '100%', background: 'rgba(0, 0, 0, 0.5)', padding: '40px', borderRadius: '10px', display: 'inline-block', backgroundImage: 'url(/honest_way_main_image.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <Title level={1} style={{ color: '#fff' }}>Your Trusted Partner in Healthy Food Choices</Title>
           <Text style={{ color: '#fff', fontSize: '18px' }}>
             Curating food products that pass our rigorous 4-stage lab test to empower you in making informed, healthy choices.
           </Text>
           <br /><br />
-          <Button type="primary" size="large">Browse Verified Choices</Button>
+          <Button onClick={()=>navigate('/verified-products')} type="primary" size="large">Browse Verified Choices</Button>
         </div>
     <div style={{ width: '100%', marginTop: '2rem' }}>
       <VerificationMatters />
@@ -38,7 +39,7 @@ const Home = () => (
       <ComingSoon />
     </div>
   </Content>
-);
+};
 
 const App = () => {
   return (
@@ -57,7 +58,7 @@ const App = () => {
             <Menu.Item key="3"><Link to="/coming-soon">Coming Soon</Link></Menu.Item>
             <Menu.Item key="4"><Link to="/for-brands">For Brands</Link></Menu.Item>
           </Menu>
-          <Button type="primary">Get Started</Button>
+          {/* <Button type="primary">Get Started</Button> */}
         </Header>
 
         {/* Routing Setup */}

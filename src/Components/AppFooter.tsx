@@ -43,30 +43,30 @@ const AppFooter = () => {
             Follow us
           </Text>
           <div style={{ marginTop: "8px" }}>
-            <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
+            <a href="https://www.youtube.com/@HonestWay" target="_blank" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'..//YouTube.png'}
+                  src={'/YouTube.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>
             
-            <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
+            <a href="https://www.instagram.com/honestway.in/" target="_blank" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'..//Instagram Circle.png'}
+                  src={'/Instagram Circle.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>
             
-            <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
+            <a href="https://linkedin.com/company/honestway/" target="_blank" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'..//LinkedIn Circled.png'}
+                  src={'/LinkedIn Circled.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>
             
-            <a href="#" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
+            <a href="https://www.facebook.com/honestway.in/" target="_blank" style={{ color: "white", margin: "0 10px", fontSize: "20px" }}>
             <img
-                  src={'..//Facebook.png'}
+                  src={'/Facebook.png'}
                   style={{ width: "40px", height: "40px", marginRight: "12px" }}
                 />
             </a>
